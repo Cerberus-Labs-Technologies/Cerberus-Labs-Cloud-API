@@ -16,27 +16,27 @@ type OfflinePlayer struct {
 	// Rank        string `json:"rank"` // TODO: add rank
 }
 
-func (p *OfflinePlayer) getUUID() UUID {
+func (p *OfflinePlayer) GetUUID() UUID {
 	return p.UUID
 }
 
-func (p *OfflinePlayer) getUsername() string {
+func (p *OfflinePlayer) GetUsername() string {
 	return p.Username
 }
 
-func (p *OfflinePlayer) getXBoxUUID() string {
+func (p *OfflinePlayer) GetXBoxUUID() string {
 	return p.XBoxUUID.String
 }
 
-func (p *OfflinePlayer) getLastIP() string {
+func (p *OfflinePlayer) GetLastIP() string {
 	return p.LastIP
 }
 
-func (p *OfflinePlayer) getLastSeen() database.TimeStamp {
+func (p *OfflinePlayer) GetLastSeen() database.TimeStamp {
 	return p.LastSeen
 }
 
-func (p *OfflinePlayer) getFirstSeen() database.TimeStamp {
+func (p *OfflinePlayer) GetFirstSeen() database.TimeStamp {
 	return p.FirstSeen
 }
 

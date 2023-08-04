@@ -5,10 +5,10 @@ import (
 )
 
 type IPlayer interface {
-	getUUID() UUID
-	getUsername() string
-	getXBoxUUID() database.JsonString
-	getLastIP() string
-	getLastSeen() database.TimeStamp
-	getFirstSeen() database.TimeStamp
+	GetUUID() UUID
+	GetUsername() string
+	GetXBoxUUID() database.JsonString
+	GetLastIP() string
+	GetLastSeen() database.TimeStamp
+	GetFirstSeen() database.TimeStamp
 }
