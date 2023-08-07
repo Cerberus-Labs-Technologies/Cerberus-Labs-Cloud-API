@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"github.com/Cerberus-Labs-Technologies/Cerberus-Labs-Cloud-API/database"
 	"math/rand"
+	"strings"
 	"time"
 )
 
@@ -79,6 +80,15 @@ type Scope struct {
 	Permissions []Permission       `json:"permissions"`
 	CreatedAt   database.TimeStamp `json:"createdAt" db:"created_at"`
 	UpdatedAt   database.TimeStamp `json:"updatedAt" db:"updated_at"`
+}
+
+func (scope *Scope) hasPermission(permission string) bool {
+	for _, p := range scope.Permissions {
+		if strings.ToLower(p.Permission) == strings.ToLower(permission) {
+			return true
+		}
+	}
+	return false
 }
 
 type DBScope struct {
