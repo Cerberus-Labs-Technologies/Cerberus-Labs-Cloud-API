@@ -82,7 +82,7 @@ type Scope struct {
 	UpdatedAt   database.TimeStamp `json:"updatedAt" db:"updated_at"`
 }
 
-func (scope *Scope) hasPermission(permission string) bool {
+func (scope *Scope) HasPermission(permission string) bool {
 	for _, p := range scope.Permissions {
 		if strings.ToLower(p.Permission) == strings.ToLower(permission) {
 			return true
