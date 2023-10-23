@@ -1,5 +1,7 @@
 package reports
 
+// All report related packets
+
 type PlayerReportedPacket struct {
 	Name   string `json:"name"`
 	Report Report `json:"report"`

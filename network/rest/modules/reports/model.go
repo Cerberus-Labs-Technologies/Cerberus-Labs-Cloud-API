@@ -2,6 +2,7 @@ package reports
 
 import "github.com/Cerberus-Labs-Technologies/Cerberus-Labs-Cloud-API/database"
 
+// Report represents a report in the database
 type Report struct {
 	ID              int                 `json:"id" db:"id"`
 	ReportingPlayer database.JsonString `json:"reportingPlayer" db:"reporting_player"`
