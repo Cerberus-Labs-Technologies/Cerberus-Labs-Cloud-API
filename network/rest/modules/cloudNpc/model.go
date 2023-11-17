@@ -29,12 +29,12 @@ func (cp *CloudNPC) ToCloudNPCDB() CloudNPCDB {
 		Skin:               cp.Skin,
 		GroupName:          cp.Group.Name,
 		Location:           cp.Location.ToJsonString(),
-		Sneaking:           false,
-		CopiesPlayer:       false,
-		LookAtPlayer:       false,
-		Visible:            false,
-		Glowing:            false,
-		BouncePlayers:      false,
+		Sneaking:           cp.Sneaking,
+		CopiesPlayer:       cp.CopiesPlayer,
+		LookAtPlayer:       cp.LookAtPlayer,
+		Visible:            cp.Visible,
+		Glowing:            cp.Glowing,
+		BouncePlayers:      cp.BouncePlayers,
 		BouncePlayersRange: cp.BouncePlayersRange,
 	}
 }
