@@ -35,7 +35,7 @@ func (cp *CloudNPC) ToCloudNPCDB() CloudNPCDB {
 		Visible:            false,
 		Glowing:            false,
 		BouncePlayers:      false,
-		BouncePlayersRange: database.JsonFloat64{},
+		BouncePlayersRange: cp.BouncePlayersRange,
 	}
 }
 
