@@ -12,6 +12,10 @@ type Group struct {
 	Name                      string   `json:"name"`
 	TemplateName              string   `json:"templateName"`
 	MaxMemory                 int      `json:"maxMemory"`
+	MaxCpuUsage               int      `json:"maxCpuUsage"`
+	MaxDiskSpace              int      `json:"maxDiskSpace"`
+	MaxIOUsage                int      `json:"maxIOUsage"`
+	MaxProcessCount           int      `json:"maxProcessCount"`
 	MaxPlayers                int      `json:"maxPlayers"`
 	MinimumOnlineServiceCount int      `json:"minimumOnlineServiceCount"`
 	MaximumOnlineServiceCount int      `json:"maximumOnlineServiceCount"`
